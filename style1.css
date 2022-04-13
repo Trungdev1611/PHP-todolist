@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #FFEFBA;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFFFFF, #FFEFBA);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFFFFF, #FFEFBA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.todolist {
+    /* border: 1px solid red; */
+    width: 25%;
+    padding: 20px 10px;
+    -webkit-box-shadow: 5px 5px 15px 5px #CCCCCC; 
+    box-shadow: 5px 5px 15px 5px #CCCCCC;
+    background-color: #FFFFFF;
+}
+.inputFiled {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px 0;
+}
+.test {
+    flex: 1;
+    margin-right: 10px;
+    
+}
+input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li.listtodo-item {
+    padding: 15px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+li.listtodo-item:hover {
+    background-color: rgb(40, 190, 183);
+    color: white;
+    cursor: pointer;
+}
+.desc {
+    /* font-weight: bold; */
+    padding: 10px 0 10px 10px;
+    color: red;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+@media screen and (min-width: 500px) {
+    .todolist {
+        /* border: 1px solid red; */
+        width: 60%;
+    }
+}
+.error {
+    color: red;
+
+}
+.hide {
+    display: none;
+}
